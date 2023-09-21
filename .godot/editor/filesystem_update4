@@ -1,0 +1,6 @@
+res://scenes/main/main.tscn
+res://resources/tileset.tres
+res://scenes/game_object/experince_vial/experince_vial.gd
+res://scenes/game_object/experince_vial/experince_vial.tscn
+res://scenes/game_object/player/player.tscn
+res://scenes/game_object/player/player.gd
