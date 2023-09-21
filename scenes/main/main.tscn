@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://drtpmwexkj7rc"]
+[gd_scene load_steps=9 format=3 uid="uid://drtpmwexkj7rc"]
 
 [ext_resource type="PackedScene" uid="uid://buait22nbs5de" path="res://scenes/manager/enemy_manager.tscn" id="1_4kq6m"]
 [ext_resource type="PackedScene" uid="uid://72u4omlwhl15" path="res://scenes/game_object/player/player.tscn" id="1_aykeb"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://b8mwvb5c504h0" path="res://scenes/manager/arena_time_manager.tscn" id="2_q5a2p"]
 [ext_resource type="PackedScene" uid="uid://ch4vulqyirte4" path="res://scenes/game_object/game_camera/game_camera.tscn" id="3_pdl3c"]
 [ext_resource type="PackedScene" uid="uid://d3agu0lairaux" path="res://scenes/game_object/experince_vial/experince_vial.tscn" id="7_bltp1"]
+[ext_resource type="PackedScene" uid="uid://qjsqg87pw64e" path="res://scenes/manager/experince_manager.tscn" id="8_lpa7s"]
 
 [node name="Main" type="Node"]
 
@@ -16,6 +17,8 @@ arena_time_manager = NodePath("../ArenaTimeManager")
 [node name="ArenaTimeManager" parent="." instance=ExtResource("2_q5a2p")]
 
 [node name="EnemyManager" parent="." instance=ExtResource("1_4kq6m")]
+
+[node name="ExperinceManager" parent="." instance=ExtResource("8_lpa7s")]
 
 [node name="GameCamera" parent="." instance=ExtResource("3_pdl3c")]
 
@@ -27,4 +30,11 @@ layer_0/tile_data = PackedInt32Array(0, 0, 4, 65536, 0, 4, 131072, 0, 4, 196608,
 [node name="Player" parent="." instance=ExtResource("1_aykeb")]
 position = Vector2(54, 72)
 
+[node name="ExperinceVial3" parent="." instance=ExtResource("7_bltp1")]
+position = Vector2(82, 178)
+
+[node name="ExperinceVial2" parent="." instance=ExtResource("7_bltp1")]
+position = Vector2(216, 186)
+
 [node name="ExperinceVial" parent="." instance=ExtResource("7_bltp1")]
+position = Vector2(200, 85)
